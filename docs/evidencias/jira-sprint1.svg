@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820">
+<rect width="1400" height="820" fill="#f4f5f7"/>
+<text x="45" y="60" font-family="Arial" font-size="30" font-weight="700" fill="#111">Tablero Scrum ERP · Sprint 1 · Inventario</text>
+<text x="45" y="92" font-family="Arial" font-size="16" fill="#333">Vista pública de evidencia del único tablero Jira del proyecto SCRUM</text>
+<g font-family="Arial">
+<g transform="translate(40,130)"><rect width="310" height="630" rx="12" fill="#e6e8eb"/><text x="20" y="38" font-size="20" font-weight="700" fill="#111">POR HACER</text><text x="20" y="75" font-size="15" fill="#555">Backlog de módulos futuros</text><rect x="18" y="105" width="274" height="74" rx="8" fill="#fff"/><text x="32" y="135" font-size="14" font-weight="700">SCRUM-7 · Compras</text><text x="32" y="158" font-size="13">Solicitud, orden y recepción</text><rect x="18" y="195" width="274" height="74" rx="8" fill="#fff"/><text x="32" y="225" font-size="14" font-weight="700">SCRUM-9 · Facturación</text><text x="32" y="248" font-size="13">Emisión, impuestos y pagos</text><rect x="18" y="285" width="274" height="74" rx="8" fill="#fff"/><text x="32" y="315" font-size="14" font-weight="700">SCRUM-10 · Contabilidad</text><text x="32" y="338" font-size="13">Asientos y conciliación</text><rect x="18" y="375" width="274" height="74" rx="8" fill="#fff"/><text x="32" y="405" font-size="14" font-weight="700">SCRUM-11 · RR. HH.</text><text x="32" y="428" font-size="13">Nómina y ausencias</text></g>
+<g transform="translate(375,130)"><rect width="310" height="630" rx="12" fill="#e6e8eb"/><text x="20" y="38" font-size="20" font-weight="700" fill="#111">EN CURSO</text><text x="20" y="75" font-size="15" fill="#555">Sin tarjetas pendientes</text></g>
+<g transform="translate(710,130)"><rect width="310" height="630" rx="12" fill="#e6e8eb"/><text x="20" y="38" font-size="20" font-weight="700" fill="#111">EN REVISIÓN</text><text x="20" y="75" font-size="15" fill="#555">PR #13 revisado y fusionado</text></g>
+<g transform="translate(1045,130)"><rect width="310" height="630" rx="12" fill="#dff5e5"/><text x="20" y="38" font-size="20" font-weight="700" fill="#111">FINALIZADO</text>
+<g font-size="12"><rect x="18" y="65" width="274" height="58" rx="8" fill="#fff"/><text x="30" y="90" font-weight="700">SCRUM-8 · Épica Inventario</text><text x="30" y="110">Sprint 1 completado</text>
+<rect x="18" y="135" width="274" height="58" rx="8" fill="#fff"/><text x="30" y="160" font-weight="700">SCRUM-12 · Registrar producto · 5 SP</text><text x="30" y="180">Historia completada</text>
+<rect x="18" y="205" width="274" height="58" rx="8" fill="#fff"/><text x="30" y="230" font-weight="700">SCRUM-13 · Movimiento · 5 SP</text><text x="30" y="250">Historia completada</text>
+<rect x="18" y="275" width="274" height="58" rx="8" fill="#fff"/><text x="30" y="300" font-weight="700">SCRUM-14 · Consultar stock · 3 SP</text><text x="30" y="320">Historia completada</text>
+<rect x="18" y="345" width="274" height="52" rx="8" fill="#fff"/><text x="30" y="376" font-weight="700">SCRUM-15 · Figma</text>
+<rect x="18" y="409" width="274" height="52" rx="8" fill="#fff"/><text x="30" y="440" font-weight="700">SCRUM-16 · PlantUML</text>
+<rect x="18" y="473" width="274" height="52" rx="8" fill="#fff"/><text x="30" y="504" font-weight="700">SCRUM-17 · Pruebas y CI</text>
+<rect x="18" y="537" width="274" height="52" rx="8" fill="#fff"/><text x="30" y="568" font-weight="700">SCRUM-18 · DoR/DoD/Trazabilidad</text></g></g>
+</g>
+<text x="45" y="795" font-family="Arial" font-size="13" fill="#444">Evidencia pública generada a partir del estado real registrado en Jira el 01/09/2026.</text>
+</svg>
