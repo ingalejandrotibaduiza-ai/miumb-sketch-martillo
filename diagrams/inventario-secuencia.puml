@@ -1,0 +1,23 @@
+@startuml
+actor Almacenista
+participant "Web ERP" as Web
+participant "API Inventario" as API
+participant "Servicio Inventario" as Svc
+database "ERP DB" as DB
+Almacenista -> Web : Registra salida(código, cantidad)
+Web -> API : POST /movimientos
+API -> Svc : registrarSalida(producto, cantidad)
+Svc -> DB : consultarStock(producto)
+DB --> Svc : stockActual
+alt cantidad <= stockActual
+  Svc -> DB : guardarMovimiento(SALIDA)
+  Svc -> DB : actualizarStock(-cantidad)
+  DB --> Svc : OK
+  Svc --> API : movimiento confirmado
+  API --> Web : 201 Created + nuevo stock
+else cantidad > stockActual
+  Svc --> API : error stock insuficiente
+  API --> Web : 409 Conflict
+end
+note over Web,DB : SCRUM-13
+@enduml

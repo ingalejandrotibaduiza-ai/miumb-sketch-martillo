@@ -1,0 +1,19 @@
+@startuml
+node "Equipo usuario" {
+  artifact "Navegador" as Browser
+}
+node "Servidor aplicación" {
+  artifact "Frontend ERP" as FE
+  artifact "API ERP" as API
+}
+node "Servidor de datos" {
+  database "PostgreSQL ERP" as DB
+}
+cloud "GitHub" as GH
+Browser --> FE : HTTPS
+FE --> API : REST
+API --> DB : SQL/TLS
+GH ..> FE : CI/CD opcional
+GH ..> API : CI/CD opcional
+note right of API : Módulo Inventario\nSprint 1
+@enduml
