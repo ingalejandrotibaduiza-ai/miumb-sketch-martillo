@@ -1,0 +1,17 @@
+@startuml
+skinparam componentStyle rectangle
+actor "Usuario de inventario" as U
+component "Frontend ERP\nWeb" as FE
+component "API Inventario" as API
+component "Servicio Inventario" as SVC
+database "ERP DB" as DB
+U --> FE
+FE --> API : HTTPS / JSON
+API --> SVC
+SVC --> DB : productos / movimientos
+note right of FE
+SCRUM-12
+SCRUM-13
+SCRUM-14
+end note
+@enduml
