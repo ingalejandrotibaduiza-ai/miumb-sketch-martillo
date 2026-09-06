@@ -17,9 +17,39 @@ Al finalizar el Sprint 1 se tendrá un prototipo funcional de front-end para reg
 - Registro de joyas con referencia, material, precio, stock, proveedor y certificado.
 - Dashboard ejecutivo con total de joyas, valor de inventario y unidades disponibles.
 - Consulta de joya por referencia.
-- Backlog inicial tipo Jira para el Sprint 1.
-- Documentación de arquitectura y contratos API.
+- Backlog inicial real en Jira para el Sprint 1.
+- Documentación de arquitectura arc42.
 - Uso de localStorage para simular persistencia.
+
+## Jira real
+
+Sitio: https://ingalejandrotibaduiza.atlassian.net
+
+Proyecto: SCRUM - Equipo Krono
+
+### Épicas
+
+- SCRUM-3: EPIC - Inventario de joyas.
+- SCRUM-4: EPIC - Ventas y facturación de joyas.
+- SCRUM-5: EPIC - Clientes y reservas.
+- SCRUM-6: EPIC - Proveedores y compras.
+- SCRUM-7: EPIC - Reportes y administración.
+
+### Sprint 1
+
+- SCRUM-8: HU-01 Registrar joya nueva en inventario.
+- SCRUM-9: HU-02 Consultar joya por referencia.
+- SCRUM-10: HU-03 Visualizar dashboard de inventario.
+- SCRUM-11: HU-04 Registrar proveedor asociado.
+- SCRUM-12: Tarea - Definir contratos API REST de joyas.
+- SCRUM-13: Tarea - Implementar localStorage en el ERP.
+- SCRUM-14: Tarea - Validar diseño responsive del ERP.
+- SCRUM-15: Tarea - Documentar arquitectura inicial del ERP.
+
+## Pull Requests de evidencia
+
+- PR #22: feature/HU-01-inventario-joyas → develop.
+- PR #23: develop → main.
 
 ## Temas del curso aplicados
 
@@ -50,7 +80,10 @@ script.js
 favicon.svg
 styles/styles.css
 docs/sprint-1.md
-docs/jira_backlog_sprint1.csv
+docs/pruebas-sprint1.md
+docs/sprint-review-retrospective.md
+docs/arc42/
+docs/evidencias/
 src/inventario.py
 tests/test_inventario.py
 ```
@@ -64,11 +97,16 @@ Base de datos: MongoDB
 API REST: /api/joyas, /api/clientes, /api/ventas, /api/proveedores
 ```
 
-## Flujo Git sugerido
+## Flujo Git ejecutado
 
-```bash
-git status
-git add .
-git commit -m "Sprint 1 ERP joyeria Martillo Dorado"
-git push
+```text
+main → develop → feature/HU-01-inventario-joyas → Pull Request #22 → develop → Pull Request #23 → main
 ```
+
+## Evidencias principales
+
+- Documentación arc42: docs/arc42/
+- Plan de pruebas: docs/pruebas-sprint1.md
+- Sprint Review y Retrospectiva: docs/sprint-review-retrospective.md
+- Evidencia Jira: docs/evidencias/jira-real-sprint1.md
+- Wireframes: docs/evidencias/wireframe-dashboard.svg, wireframe-formulario.svg y wireframe-consulta.svg
