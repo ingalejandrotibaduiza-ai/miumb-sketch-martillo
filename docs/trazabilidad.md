@@ -1,21 +1,23 @@
-# Matriz de trazabilidad
+# Trazabilidad Sprint 1 - ERP Joyería Martillo Dorado
 
-| Historia | Jira | Figma | PlantUML | Prueba | Rama sugerida |
-|---|---|---|---|---|---|
-| Registrar producto | SCRUM-12 | Pantalla 02 | inventario-componentes.puml, inventario-clases.puml | tests/ERP-INV-01.md | feature/SCRUM-12-producto |
-| Registrar movimiento | SCRUM-13 | Pantalla 03 | inventario-secuencia.puml | tests/ERP-INV-02.md | feature/SCRUM-13-movimiento |
-| Consultar stock | SCRUM-14 | Pantalla 01 | inventario-despliegue.puml | tests/ERP-INV-03.md | feature/SCRUM-14-stock |
+| Elemento | Evidencia |
+|---|---|
+| Problema | Gestión manual de inventario, ventas y proveedores de joyería. |
+| Sprint Goal | Prototipo funcional de inventario y dashboard. |
+| MVP | Registro de joyas, consulta por referencia, dashboard y almacenamiento local. |
+| HU-01 | Issue GitHub #14. |
+| HU-02 | Issue GitHub #15. |
+| HU-03 | Issue GitHub #16. |
+| HU-04 | Issue GitHub #17. |
+| API REST | Contratos documentados en `docs/sprint-1.md`. |
+| Jira | Backlog importable en `docs/jira_backlog_sprint1.csv`. |
+| Código | `index.html`, `styles/styles.css`, `script.js`, `src/inventario.py`. |
+| Pruebas | `tests/test_inventario.py`. |
 
-## Definition of Ready (DoR)
-- Historia entendible y con valor de negocio.
-- Criterios de aceptación definidos.
-- Dependencias identificadas.
-- Diseño o referencia UX disponible cuando aplique.
-- Historia estimada y priorizada.
+## Definition of Done
 
-## Definition of Done (DoD)
-- Criterios de aceptación cumplidos.
-- Código versionado y revisado mediante Pull Request.
-- Pruebas automáticas en verde.
-- Diagramas y documentación actualizados.
-- Trazabilidad historia → Figma → PlantUML → código → prueba registrada.
+- Código publicado en GitHub.
+- Página funcional en navegador.
+- Historias del Sprint 1 documentadas.
+- Backlog tipo Jira disponible.
+- Evidencias listas para anexar al informe.
