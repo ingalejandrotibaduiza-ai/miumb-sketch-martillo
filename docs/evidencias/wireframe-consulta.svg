@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="680" viewBox="0 0 1000 680">
+  <rect width="1000" height="680" fill="#f7f4ef"/>
+  <rect x="70" y="50" width="860" height="90" rx="20" fill="#19120c"/>
+  <text x="110" y="107" fill="#d6b46a" font-size="32" font-family="Arial" font-weight="bold">Consulta de joya por referencia</text>
+  <rect x="120" y="190" width="760" height="360" rx="24" fill="#ffffff" stroke="#d6b46a"/>
+  <text x="170" y="260" fill="#19120c" font-size="26" font-family="Arial" font-weight="bold">Buscar pieza</text>
+  <rect x="170" y="300" width="460" height="55" rx="12" fill="#f3f3f3" stroke="#cccccc"/>
+  <text x="195" y="335" fill="#777" font-size="20" font-family="Arial">Ej: MD-AN-1001</text>
+  <rect x="650" y="300" width="170" height="55" rx="16" fill="#d6b46a"/>
+  <text x="702" y="335" fill="#19120c" font-size="20" font-family="Arial" font-weight="bold">Buscar</text>
+  <rect x="170" y="395" width="650" height="110" rx="16" fill="#fffaf0" stroke="#d6b46a"/>
+  <text x="200" y="435" fill="#19120c" font-size="20" font-family="Arial">Resultado: Anillo Aurora Oro 18K</text>
+  <text x="200" y="470" fill="#555" font-size="18" font-family="Arial">Estado: Disponible · Stock: 2 · Proveedor: Gemas Andinas SAS</text>
+</svg>
