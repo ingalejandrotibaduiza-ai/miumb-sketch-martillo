@@ -1,39 +1,38 @@
-# Entrega pública · Taller Scrum ERP
+# Entrega pública - Joyería Martillo Dorado ERP
 
-Esta página reúne evidencias accesibles sin iniciar sesión.
+Esta entrega corresponde al avance del Sprint 1 del proyecto final de Ingeniería Web I.
 
-## Evidencia del tablero Scrum
+## Proyecto
 
-![Tablero Scrum ERP](docs/evidencias/jira-sprint1.svg)
+Sistema ERP web para una joyería ficticia llamada Joyería Martillo Dorado S.A.S.
 
-## Repositorio y código
+## Problema
 
-- Repositorio público: https://github.com/ingalejandrotibaduiza-ai/miumb-sketch-martillo
-- Código de Inventario: https://github.com/ingalejandrotibaduiza-ai/miumb-sketch-martillo/blob/main/src/inventario.py
-- Diagramas PlantUML: https://github.com/ingalejandrotibaduiza-ai/miumb-sketch-martillo/tree/main/diagrams
-- Pruebas: https://github.com/ingalejandrotibaduiza-ai/miumb-sketch-martillo/tree/main/tests
-- DoR, DoD y trazabilidad: https://github.com/ingalejandrotibaduiza-ai/miumb-sketch-martillo/blob/main/docs/trazabilidad.md
+La joyería controla piezas valiosas, clientes, proveedores y ventas mediante hojas de cálculo y mensajes informales. Esto genera errores en inventario, baja trazabilidad y dificultad para tomar decisiones.
 
-## Flujo Git
+## Solución
 
-- Pull Request #13: https://github.com/ingalejandrotibaduiza-ai/miumb-sketch-martillo/pull/13
-- Issues del Sprint 1: https://github.com/ingalejandrotibaduiza-ai/miumb-sketch-martillo/issues
-- GitHub Actions / CI: https://github.com/ingalejandrotibaduiza-ai/miumb-sketch-martillo/actions
+Diseñar un ERP web con módulos de inventario, ventas, clientes, proveedores y reportes.
 
-## Historias del Sprint 1
+## Evidencia principal
 
-- SCRUM-12 · Registrar producto · 5 SP
-- SCRUM-13 · Registrar movimiento · 5 SP
-- SCRUM-14 · Consultar stock · 3 SP
+- Página web: `index.html`
+- Estilos: `styles/styles.css`
+- Lógica: `script.js`
+- Backlog tipo Jira: `docs/jira_backlog_sprint1.csv`
+- Documentación Sprint 1: `docs/sprint-1.md`
 
-Todas quedaron integradas mediante el PR #13 y el CI terminó correctamente.
+## Historias Sprint 1
 
-## Diseño UX/UI
+- HU-01 Registrar joya nueva.
+- HU-02 Consultar joya por referencia.
+- HU-03 Visualizar dashboard de inventario.
+- HU-04 Registrar proveedor.
+- HU-05 Definir contratos API.
+- HU-06 Crear documentación inicial.
+- HU-07 Probar almacenamiento local.
+- HU-08 Validar diseño responsive.
 
-El prototipo editable original está en Figma. Dependiendo de la configuración de Figma, el enlace original puede solicitar inicio de sesión. Para la entrega pública, la evidencia funcional y la descripción del flujo quedan documentadas en este repositorio.
+## Criterio de entrega
 
-Figma original: https://www.figma.com/design/bKDiVKHWbJTkElWHEXYL2N
-
-## Jira original
-
-El proyecto Jira conserva la trazabilidad real y los estados finales, pero Atlassian puede exigir autenticación según la configuración del sitio. La vista pública equivalente del tablero se incluye arriba como evidencia.
+Se entrega un prototipo funcional, documentación inicial, backlog y evidencias del avance realizado.
