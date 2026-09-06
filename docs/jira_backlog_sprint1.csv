@@ -1,0 +1,9 @@
+Issue Type,Summary,Description,Priority,Story Points,Status,Epic
+Epic,ERP Joyería Martillo Dorado,Construir ERP web para joyería con inventario ventas clientes proveedores y reportes,High,,Product Backlog,
+Story,HU-01 Registrar joya nueva,Como administrador quiero registrar joyas nuevas para controlar inventario precio y disponibilidad,High,5,En Proceso,ERP Joyería Martillo Dorado
+Story,HU-02 Consultar joya por referencia,Como vendedor quiero consultar una joya por referencia para verificar su estado antes de venderla,High,3,En Proceso,ERP Joyería Martillo Dorado
+Story,HU-03 Visualizar dashboard de inventario,Como administrador quiero ver indicadores de inventario para tomar decisiones comerciales,High,5,En Proceso,ERP Joyería Martillo Dorado
+Story,HU-04 Registrar proveedor asociado,Como administrador quiero registrar proveedores para relacionarlos con las joyas compradas,Medium,3,Sprint Backlog,ERP Joyería Martillo Dorado
+Task,Definir contratos API REST,Crear contratos GET y POST para el recurso joyas,Medium,2,Hecho,ERP Joyería Martillo Dorado
+Task,Implementar localStorage,Guardar joyas y notas editables en el navegador,Medium,2,Hecho,ERP Joyería Martillo Dorado
+Task,Validar responsive,Probar visualización en escritorio y móvil,Medium,1,En Revisión,ERP Joyería Martillo Dorado
