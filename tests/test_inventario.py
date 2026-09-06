@@ -1,29 +1,37 @@
-import unittest
-from src.inventario import Inventario
+import pytest
 
-class TestInventario(unittest.TestCase):
-    def setUp(self):
-        self.inv = Inventario()
+from src.inventario import InventarioJoyeria, Joya
 
-    def test_registrar_producto(self):
-        p = self.inv.registrar_producto("P-001", "Teclado", "Tecnología", "und", 10)
-        self.assertEqual(p["stock"], 10)
 
-    def test_codigo_duplicado(self):
-        self.inv.registrar_producto("P-001", "Teclado", "Tecnología", "und", 10)
-        with self.assertRaises(ValueError):
-            self.inv.registrar_producto("P-001", "Otro", "Tecnología", "und", 1)
+def crear_joya():
+    return Joya(
+        referencia="MD-AN-1001",
+        nombre="Anillo Aurora Oro 18K",
+        categoria="Anillo",
+        material="Oro 18K",
+        precio=1250000,
+        stock=2,
+        proveedor="Gemas Andinas SAS",
+        certificado=True,
+    )
 
-    def test_movimiento_entrada_y_salida(self):
-        self.inv.registrar_producto("P-001", "Teclado", "Tecnología", "und", 10)
-        self.inv.registrar_movimiento("P-001", "entrada", 5)
-        self.inv.registrar_movimiento("P-001", "salida", 3)
-        self.assertEqual(self.inv.productos["P-001"]["stock"], 12)
 
-    def test_no_permite_stock_negativo(self):
-        self.inv.registrar_producto("P-001", "Teclado", "Tecnología", "und", 2)
-        with self.assertRaises(ValueError):
-            self.inv.registrar_movimiento("P-001", "salida", 3)
+def test_registrar_joya_y_consultar_por_referencia():
+    inventario = InventarioJoyeria()
+    joya = crear_joya()
+    inventario.registrar_joya(joya)
+    assert inventario.consultar_por_referencia("MD-AN-1001").nombre == "Anillo Aurora Oro 18K"
 
-if __name__ == "__main__":
-    unittest.main()
+
+def test_no_permite_referencia_duplicada():
+    inventario = InventarioJoyeria()
+    joya = crear_joya()
+    inventario.registrar_joya(joya)
+    with pytest.raises(ValueError):
+        inventario.registrar_joya(joya)
+
+
+def test_calcula_valor_total_inventario():
+    inventario = InventarioJoyeria()
+    inventario.registrar_joya(crear_joya())
+    assert inventario.valor_total_inventario() == 2500000
