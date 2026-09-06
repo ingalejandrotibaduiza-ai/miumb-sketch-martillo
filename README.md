@@ -1,47 +1,74 @@
-# Taller Scrum ERP - Un solo tablero
+# Joyería Martillo Dorado ERP - Sprint 1
 
-Repositorio principal del taller aplicado de Scrum para un ERP, integrando Jira, Figma, PlantUML, GitHub, código, pruebas y documentación viva.
+Repositorio académico para el avance del proyecto final de Ingeniería Web I.
 
-## Alcance ERP
+## Descripción del proyecto
 
-El ERP se organiza en un único tablero Jira con cinco módulos como épicas:
+Joyería Martillo Dorado S.A.S. es una empresa ficticia que necesita modernizar su operación. Actualmente controla joyas, proveedores, clientes y ventas mediante hojas de cálculo y mensajes informales, lo que genera errores en inventario y poca trazabilidad de piezas valiosas.
 
-- Compras: solicitud, orden de compra y recepción.
-- Inventario: altas/bajas, movimientos y stock.
-- Facturación: emisión, impuestos y pagos.
-- Contabilidad: asientos y conciliación.
-- RR. HH.: nómina simplificada y ausencias.
+La solución propuesta es un ERP web para centralizar la administración de la joyería.
 
-El Sprint 1 se concentra en Inventario con 3 historias y 13 puntos.
+## Sprint Goal
 
-## Enlaces principales
+Al finalizar el Sprint 1 se tendrá un prototipo funcional de front-end para registrar joyas, consultar referencias, visualizar indicadores de inventario y documentar la arquitectura inicial del sistema ERP.
 
-- Jira - épica Inventario: https://academia-team-g3jymqx2.atlassian.net/browse/SCRUM-8
-- Jira - SCRUM-12: https://academia-team-g3jymqx2.atlassian.net/browse/SCRUM-12
-- Jira - SCRUM-13: https://academia-team-g3jymqx2.atlassian.net/browse/SCRUM-13
-- Jira - SCRUM-14: https://academia-team-g3jymqx2.atlassian.net/browse/SCRUM-14
-- Figma: https://www.figma.com/design/bKDiVKHWbJTkElWHEXYL2N
-- Issues GitHub: https://github.com/ingalejandrotibaduiza-ai/miumb-sketch-martillo/issues
+## MVP
 
-## Historias Sprint 1
+- Registro de joyas con referencia, material, precio, stock, proveedor y certificado.
+- Dashboard ejecutivo con total de joyas, valor de inventario y unidades disponibles.
+- Consulta de joya por referencia.
+- Backlog inicial tipo Jira para el Sprint 1.
+- Documentación de arquitectura y contratos API.
+- Uso de localStorage para simular persistencia.
 
-- SCRUM-12 - Registrar producto en inventario - 5 puntos.
-- SCRUM-13 - Registrar movimiento de inventario - 5 puntos.
-- SCRUM-14 - Consultar stock de productos - 3 puntos.
+## Temas del curso aplicados
+
+- Tema 11: Float.
+- Tema 12: Contenido centrado.
+- Tema 13: Flexbox.
+- Tema 14: Position.
+- Tema 15: Transform.
+- Tema 16: Formulario.
+- Tema 17: Iframe.
+- Tema 18: Transition.
+- Tema 19: Columnas.
+- Tema 20: Video.
+- Tema 21: Audio.
+- Tema 22: Transparencias y degradados.
+- Tema 23: Animaciones.
+- Tema 24: SVG.
+- Tema 25: Canvas.
+- Tema 26: Responsive.
+- Tema 27: Contenteditable.
+- Tema 28: localStorage.
 
 ## Estructura
 
-- `/docs`: documentación, DoR, DoD y trazabilidad.
-- `/design`: referencia al prototipo editable en Figma.
-- `/diagrams`: componentes, secuencia, clases y despliegue en PlantUML.
-- `/src`: incremento funcional mínimo del módulo Inventario.
-- `/tests`: casos de prueba y pruebas automatizadas.
-- `/.github/workflows`: CI básico.
+```text
+index.html
+script.js
+favicon.svg
+styles/styles.css
+docs/sprint-1.md
+docs/jira_backlog_sprint1.csv
+src/inventario.py
+tests/test_inventario.py
+```
 
-## Flujo Git
+## Arquitectura objetivo
 
-El trabajo del taller se integra mediante la rama `feature/erp-scrum-inventario` y Pull Request. Los commits, ramas e issues usan las claves Jira para mantener trazabilidad.
+```text
+Frontend: HTML, CSS, JavaScript y en fase posterior React
+Backend: Node.js + Express
+Base de datos: MongoDB
+API REST: /api/joyas, /api/clientes, /api/ventas, /api/proveedores
+```
 
-## Historial anterior
+## Flujo Git sugerido
 
-Este repositorio nació como el proyecto académico Martillo para casas de subastas. Sus documentos e issues anteriores se conservan como historial; el alcance actual del repositorio es el Taller Scrum ERP solicitado.
+```bash
+git status
+git add .
+git commit -m "Sprint 1 ERP joyeria Martillo Dorado"
+git push
+```
