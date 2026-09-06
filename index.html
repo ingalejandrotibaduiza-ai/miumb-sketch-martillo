@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joyería Martillo Dorado ERP | Sprint 1</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header id="inicio" class="hero">
+    <div class="hero-capa">
+      <nav class="nav-superior">
+        <a href="#inicio" class="marca">💎 Martillo Dorado ERP</a>
+        <div class="nav-links">
+          <a href="#problema">Problema</a>
+          <a href="#mvp">MVP</a>
+          <a href="#dashboard">Dashboard</a>
+          <a href="#sprint">Sprint 1</a>
+          <a href="#arquitectura">Arquitectura</a>
+        </div>
+      </nav>
+
+      <section class="hero-contenido animar">
+        <article class="hero-texto">
+          <p class="mini-titulo">Avance Proyecto Final · Ingeniería Web I</p>
+          <h1>ERP web para una joyería moderna</h1>
+          <p>
+            Plataforma académica para controlar inventario, ventas, clientes, proveedores y trazabilidad de joyas
+            en la empresa ficticia <strong>Joyería Martillo Dorado S.A.S.</strong>
+          </p>
+          <div class="botones-hero">
+            <a class="btn btn-primario" href="#registro">Registrar joya</a>
+            <a class="btn btn-secundario" href="#sprint">Ver Sprint 1</a>
+          </div>
+        </article>
+
+        <article class="hero-card">
+          <span class="chip">Sprint 1 activo</span>
+          <h2>Meta del sprint</h2>
+          <p>
+            Entregar un prototipo funcional con inventario de joyas, formulario de registro,
+            panel de control, búsqueda por referencia y documentación inicial.
+          </p>
+          <div class="hero-metricas">
+            <div><strong>5</strong><span>Épicas</span></div>
+            <div><strong>8</strong><span>Historias</span></div>
+            <div><strong>21</strong><span>Puntos</span></div>
+          </div>
+        </article>
+      </section>
+    </div>
+  </header>
+
+  <!-- TEMA 24: SVG decorativo -->
+  <svg class="onda" viewBox="0 0 1440 120" aria-label="Decoración SVG">
+    <path fill="#ffffff" fill-opacity="1" d="M0,96L80,85.3C160,75,320,53,480,58.7C640,64,800,96,960,96C1120,96,1280,64,1360,48L1440,32V120H0Z"></path>
+  </svg>
+
+  <main class="contenedor">
+
+    <!-- TEMA 11: FLOAT -->
+    <section id="problema" class="card float-section animar">
+      <div class="float-img icono-premium">⚒️</div>
+      <h2>Problema operativo de la joyería</h2>
+      <p>
+        La joyería administra piezas valiosas en hojas de cálculo y mensajes sueltos. Esto dificulta saber
+        qué joyas están disponibles, cuáles fueron vendidas, qué proveedor entregó cada lote y qué cliente
+        reservó una pieza específica.
+      </p>
+      <p>
+        El caos aumenta cuando se manejan anillos, cadenas, relojes, aretes y pedidos personalizados,
+        porque cada pieza necesita referencia, material, peso, valor, certificado y estado comercial.
+      </p>
+      <p class="mensaje-final"><strong>Objetivo:</strong> diseñar un ERP web claro, elegante y funcional para centralizar la operación.</p>
+    </section>
+
+    <!-- TEMA 12: CONTENIDO CENTRADO -->
+    <section class="card centrado animar">
+      <p class="mini-titulo oscuro">Solución propuesta</p>
+      <h2>Un sistema ERP para controlar la joyería de punta a punta</h2>
+      <p>
+        El sistema conecta inventario, ventas, clientes, proveedores y reportes en una sola experiencia web.
+      </p>
+    </section>
+
+    <!-- TEMA 13: FLEXBOX -->
+    <section id="mvp" class="card animar">
+      <h2>Producto Mínimo Viable (MVP)</h2>
+      <p>Para el Sprint 1 se seleccionaron las funcionalidades más importantes del ERP:</p>
+      <div class="flex-contenedor">
+        <article class="flex-item">
+          <span>💍</span>
+          <h3>Inventario de joyas</h3>
+          <p>Registro de referencia, categoría, material, stock, precio y estado.</p>
+        </article>
+        <article class="flex-item">
+          <span>🧾</span>
+          <h3>Ventas</h3>
+          <p>Simulación de venta y actualización del estado de una joya.</p>
+        </article>
+        <article class="flex-item">
+          <span>👥</span>
+          <h3>Clientes</h3>
+          <p>Registro básico de clientes frecuentes y solicitudes especiales.</p>
+        </article>
+        <article class="flex-item">
+          <span>📊</span>
+          <h3>Reportes</h3>
+          <p>Indicadores de inventario, valor total y productos disponibles.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- GRID + POSITION + TRANSFORM -->
+    <section class="doble-grid">
+      <section class="card position-box animar">
+        <!-- TEMA 14: POSITION -->
+        <div class="etiqueta">HU-01</div>
+        <h2>Historia principal</h2>
+        <p>
+          Como administrador de la joyería, quiero registrar joyas nuevas en el ERP para controlar inventario,
+          precio y disponibilidad comercial.
+        </p>
+      </section>
+      <section class="card centrado animar">
+        <!-- TEMA 15: TRANSFORM -->
+        <h2 class="zoom">Inventario premium en tiempo real ✨</h2>
+        <p>Pasa el cursor sobre el título para ver el efecto transform.</p>
+      </section>
+    </section>
+
+    <section id="dashboard" class="doble-grid">
+      <section class="card animar">
+        <h2>Dashboard ejecutivo</h2>
+        <p class="texto-suave">Indicadores simulados del ERP de joyería.</p>
+        <div class="metricas">
+          <div><strong id="total-productos">0</strong><span>Joyas registradas</span></div>
+          <div><strong id="valor-inventario">$0</strong><span>Valor inventario</span></div>
+          <div><strong id="stock-total">0</strong><span>Unidades</span></div>
+        </div>
+        <div class="barra-meta">
+          <div id="progreso-stock"></div>
+        </div>
+        <small>Meta visual: 50 unidades en catálogo para apertura de temporada.</small>
+      </section>
+
+      <section class="card animar">
+        <h2>Catálogo inicial</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Referencia</th>
+              <th>Joya</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody id="tabla-joyas"></tbody>
+        </table>
+      </section>
+    </section>
+
+    <!-- TEMA 16: FORMULARIO -->
+    <section id="registro" class="doble-grid">
+      <section class="card animar">
+        <h2>Registrar nueva joya</h2>
+        <p class="texto-suave">Formulario funcional del módulo de inventario.</p>
+        <form id="form-joya">
+          <label for="referencia">Referencia</label>
+          <input type="text" id="referencia" placeholder="Ej: MD-AN-1005">
+
+          <label for="nombre">Nombre de la joya</label>
+          <input type="text" id="nombre" placeholder="Ej: Anillo solitario oro 18K">
+
+          <label for="categoria">Categoría</label>
+          <select id="categoria">
+            <option value="">Seleccione una categoría</option>
+            <option>Anillo</option>
+            <option>Cadena</option>
+            <option>Aretes</option>
+            <option>Reloj</option>
+            <option>Pulsera</option>
+          </select>
+
+          <label for="material">Material principal</label>
+          <select id="material">
+            <option value="">Seleccione material</option>
+            <option>Oro 18K</option>
+            <option>Plata 925</option>
+            <option>Acero premium</option>
+            <option>Oro rosa</option>
+          </select>
+
+          <label for="precio">Precio de venta</label>
+          <input type="number" id="precio" placeholder="Ej: 850000">
+
+          <label for="stock">Cantidad en stock</label>
+          <input type="number" id="stock" placeholder="Ej: 3">
+
+          <label for="proveedor">Proveedor</label>
+          <input type="text" id="proveedor" placeholder="Ej: Gemas Andinas SAS">
+
+          <label class="check-line">
+            <input type="checkbox" id="certificado">
+            Incluye certificado de autenticidad
+          </label>
+
+          <button type="submit">Guardar joya</button>
+        </form>
+        <p id="mensaje-guardado" class="mensaje-exito"></p>
+      </section>
+
+      <section class="card animar">
+        <h2>Consulta de referencia</h2>
+        <p>Busca una joya por referencia para simular la trazabilidad del ERP.</p>
+        <div class="busqueda-box">
+          <input type="text" id="buscar-referencia" placeholder="Ej: MD-AN-1001">
+          <button id="btn-buscar" type="button">Buscar</button>
+        </div>
+        <div id="resultado-busqueda" class="resultado">
+          Ingresa una referencia para consultar la pieza.
+        </div>
+        <div class="producto-destacado">
+          <div class="joya-visual">💎</div>
+          <h3>Colección Aurora</h3>
+          <p>Anillos y cadenas en oro 18K con trazabilidad digital.</p>
+        </div>
+      </section>
+    </section>
+
+    <!-- TEMA 18: TRANSITION -->
+    <section class="card animar">
+      <h2>Módulos del ERP</h2>
+      <div class="estados">
+        <div class="estado-card">💍 Inventario</div>
+        <div class="estado-card">🛒 Ventas</div>
+        <div class="estado-card">👥 Clientes</div>
+        <div class="estado-card">🏷️ Proveedores</div>
+        <div class="estado-card">📊 Reportes</div>
+      </div>
+    </section>
+
+    <!-- TEMA 19: COLUMNAS -->
+    <section class="card animar">
+      <h2>Análisis del problema</h2>
+      <div class="columnas">
+        <p>
+          Una joyería requiere control exacto porque cada producto tiene alto valor comercial. El ERP propuesto
+          reduce errores humanos, centraliza información, mejora el seguimiento de inventario y permite consultar
+          piezas por referencia. En futuras fases se integrará autenticación, API REST, base de datos MongoDB,
+          módulo de ventas y reportes administrativos para apoyar la toma de decisiones.
+        </p>
+      </div>
+    </section>
+
+    <!-- TEMA 22: TRANSPARENCIA Y DEGRADADOS -->
+    <section id="arquitectura" class="card card-degradado animar">
+      <h2>Arquitectura propuesta</h2>
+      <p>El avance actual es front-end funcional; la arquitectura objetivo será full stack.</p>
+      <div class="arquitectura">
+        <div>Frontend<br><small>HTML · CSS · JavaScript</small></div>
+        <div>Backend<br><small>Node.js · Express</small></div>
+        <div>Base de datos<br><small>MongoDB</small></div>
+        <div>API REST<br><small>Inventario · Ventas · Clientes</small></div>
+      </div>
+    </section>
+
+    <section class="doble-grid">
+      <section class="card animar">
+        <h2>Contrato API: GET /api/joyas/:referencia</h2>
+        <pre>{
+  "referencia": "MD-AN-1001",
+  "nombre": "Anillo Aurora Oro 18K",
+  "categoria": "Anillo",
+  "material": "Oro 18K",
+  "precio": 1250000,
+  "stock": 2,
+  "estado": "Disponible"
+}</pre>
+      </section>
+      <section class="card animar">
+        <h2>Contrato API: POST /api/joyas</h2>
+        <pre>{
+  "referencia": "MD-CD-1006",
+  "nombre": "Cadena Toscana",
+  "material": "Plata 925",
+  "precio": 420000,
+  "proveedor": "Gemas Andinas SAS"
+}</pre>
+      </section>
+    </section>
+
+    <!-- TEMA 25: CANVAS -->
+    <section class="card animar">
+      <h2>Canvas: boceto del flujo del ERP</h2>
+      <p>Dibuja una idea rápida del flujo: registro, inventario, venta y reporte.</p>
+      <canvas id="canvas-flujo" width="760" height="260"></canvas>
+      <button id="limpiar-canvas" type="button">Limpiar canvas</button>
+    </section>
+
+    <!-- TEMA 27: CONTENIDO EDITABLE -->
+    <section class="card animar">
+      <h2>Notas editables del equipo</h2>
+      <p class="texto-suave">Contenido editable guardado en el navegador.</p>
+      <div id="notas-equipo" class="editable" contenteditable="true">
+        Pendiente: validar diseño final del dashboard, revisar criterios de aceptación y preparar demo del Sprint 1.
+      </div>
+      <button id="guardar-notas" type="button">Guardar notas</button>
+    </section>
+
+    <!-- TEMA 28: STORAGE -->
+    <section id="sprint" class="card animar">
+      <h2>Backlog Sprint 1</h2>
+      <p>El tablero tipo Jira se organiza en Product Backlog, Sprint Backlog, En proceso, En revisión y Hecho.</p>
+      <ul class="backlog">
+        <li>HU-01 Registrar joya nueva en inventario.</li>
+        <li>HU-02 Consultar joya por referencia.</li>
+        <li>HU-03 Visualizar dashboard de inventario.</li>
+        <li>HU-04 Crear módulo básico de clientes.</li>
+        <li>HU-05 Documentar arquitectura inicial en arc42.</li>
+        <li>HU-06 Preparar pruebas del formulario y almacenamiento local.</li>
+        <li>HU-07 Diseñar contratos iniciales de la API REST.</li>
+      </ul>
+    </section>
+
+    <!-- TEMA 17: IFRAME -->
+    <section class="card animar">
+      <h2>Ubicación de la joyería</h2>
+      <p>Sede ficticia ubicada en Bogotá para demostración del iframe.</p>
+      <iframe src="https://www.google.com/maps?q=Bogota%20zona%20T&output=embed" width="100%" height="260" style="border:0; border-radius:18px;" loading="lazy"></iframe>
+    </section>
+
+    <!-- TEMA 20 Y 21: VIDEO Y AUDIO -->
+    <section id="multimedia" class="doble-grid">
+      <section class="card animar">
+        <h2>Video de presentación</h2>
+        <video controls width="100%" class="media-redonda">
+          <source src="video.mp4" type="video/mp4">
+          Tu navegador no soporta video.
+        </video>
+      </section>
+      <section class="card animar">
+        <h2>Audio explicativo</h2>
+        <p>Espacio para incluir la explicación oral del avance del ERP.</p>
+        <audio controls class="audio-estilo">
+          <source src="audio.mp3" type="audio/mpeg">
+          Tu navegador no soporta audio.
+        </audio>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 - Joyería Martillo Dorado S.A.S. | Avance Sprint 1 ERP</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
