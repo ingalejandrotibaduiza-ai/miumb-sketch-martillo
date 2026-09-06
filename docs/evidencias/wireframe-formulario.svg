@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="900" viewBox="0 0 1000 900">
+  <rect width="1000" height="900" fill="#f7f4ef"/>
+  <rect x="80" y="60" width="840" height="90" rx="20" fill="#19120c"/>
+  <text x="120" y="115" fill="#d6b46a" font-size="34" font-family="Arial" font-weight="bold">Formulario - Registrar nueva joya</text>
+  <rect x="160" y="190" width="680" height="620" rx="22" fill="#ffffff" stroke="#d6b46a"/>
+  <text x="200" y="255" fill="#19120c" font-size="25" font-family="Arial" font-weight="bold">Datos principales</text>
+  <rect x="200" y="285" width="600" height="48" rx="10" fill="#f3f3f3" stroke="#cccccc"/>
+  <text x="220" y="317" fill="#777" font-size="18" font-family="Arial">Referencia</text>
+  <rect x="200" y="355" width="600" height="48" rx="10" fill="#f3f3f3" stroke="#cccccc"/>
+  <text x="220" y="387" fill="#777" font-size="18" font-family="Arial">Nombre de joya</text>
+  <rect x="200" y="425" width="285" height="48" rx="10" fill="#f3f3f3" stroke="#cccccc"/>
+  <rect x="515" y="425" width="285" height="48" rx="10" fill="#f3f3f3" stroke="#cccccc"/>
+  <text x="220" y="457" fill="#777" font-size="18" font-family="Arial">Categoría</text>
+  <text x="535" y="457" fill="#777" font-size="18" font-family="Arial">Material</text>
+  <rect x="200" y="495" width="285" height="48" rx="10" fill="#f3f3f3" stroke="#cccccc"/>
+  <rect x="515" y="495" width="285" height="48" rx="10" fill="#f3f3f3" stroke="#cccccc"/>
+  <text x="220" y="527" fill="#777" font-size="18" font-family="Arial">Precio</text>
+  <text x="535" y="527" fill="#777" font-size="18" font-family="Arial">Stock</text>
+  <rect x="200" y="565" width="600" height="48" rx="10" fill="#f3f3f3" stroke="#cccccc"/>
+  <text x="220" y="597" fill="#777" font-size="18" font-family="Arial">Proveedor</text>
+  <rect x="200" y="645" width="28" height="28" fill="#ffffff" stroke="#19120c"/>
+  <text x="245" y="668" fill="#19120c" font-size="19" font-family="Arial">Incluye certificado de autenticidad</text>
+  <rect x="200" y="715" width="250" height="56" rx="18" fill="#d6b46a"/>
+  <text x="250" y="752" fill="#19120c" font-size="21" font-family="Arial" font-weight="bold">Guardar joya</text>
+</svg>
