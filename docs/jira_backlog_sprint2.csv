@@ -1,0 +1,9 @@
+Issue Type,Summary,Description,Priority,Story Points,Status
+Epic,EPIC - Sprint 2 Funcionalidades avanzadas e IaC,Épica principal del Sprint 2 para funcionalidades avanzadas y Terraform,High,,En curso
+Story,HU-04 Calcular comisiones y nómina de vendedores,Cálculo simulado de comisiones y pago neto de vendedores,High,8,En curso
+Story,HU-05 Implementar alerta de stock crítico,Alerta automática cuando stock actual esté por debajo del mínimo,High,5,En curso
+Story,HU-06 Implementar control de acceso por roles RBAC,Roles Admin Vendedor Inventario Compras y Consulta,High,5,En revisión
+Story,HU-07 Crear infraestructura base con Terraform,VPC subredes base de datos futura y outputs,Highest,13,En revisión
+Story,HU-08 Actualizar documentación de seguridad y despliegue,Actualizar arc42 Secciones 7 y 10 con despliegue y RBAC,Medium,3,Finalizado
+Task,Tarea - Crear workflow Terraform Plan en GitHub Actions,Borrador YAML terraform plan en PR a develop,Medium,2,Finalizado
+Task,Tarea - Realizar verificación cruzada de arquitectura,Tour de arquitectura entre arc42 secciones 5 7 y 10,Medium,2,Finalizado

@@ -1,0 +1,17 @@
+@startuml
+title Secuencia HU-05 - Alerta de Stock Crítico
+actor Administrador
+participant "Formulario Inventario" as Form
+participant "StockAlertEngine" as Engine
+participant "Dashboard" as Dash
+database "LocalStorage" as LS
+Administrador -> Form : registra o actualiza joya
+Form -> Engine : enviar stock actual y mínimo
+Engine -> Engine : comparar stockActual <= stockMinimo
+alt Stock crítico
+  Engine -> LS : guardar alerta
+  Engine -> Dash : mostrar alerta visual
+else Stock suficiente
+  Engine -> Dash : mostrar estado normal
+end
+@enduml
