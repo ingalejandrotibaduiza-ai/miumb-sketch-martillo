@@ -1,0 +1,26 @@
+@startuml
+title Componentes Sprint 2 - ERP Joyería Martillo Dorado
+package "Frontend ERP" {
+  component "Dashboard" as Dashboard
+  component "Formulario Inventario" as FormInv
+  component "Vista Stock Crítico" as StockView
+}
+package "Lógica Sprint 2" {
+  component "PayrollEngine" as Payroll
+  component "StockAlertEngine" as Stock
+  component "RBAC" as RBAC
+}
+package "IaC" {
+  component "Terraform" as Terraform
+  component "GitHub Actions" as GHA
+}
+database "LocalStorage / MongoDB futuro" as DB
+FormInv --> Stock
+Stock --> StockView
+Dashboard --> Payroll
+Dashboard --> RBAC
+Stock --> DB
+Payroll --> DB
+GHA --> Terraform
+Terraform ..> DB : prepara entorno futuro
+@enduml
