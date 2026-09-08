@@ -1,0 +1,11 @@
+{
+  "name": "joyeria-martillo-erp",
+  "version": "2.0.0",
+  "description": "ERP academico para Joyeria Martillo Dorado - Sprint 2",
+  "main": "script.js",
+  "scripts": {
+    "test:sprint2": "node tests/sprint2.test.js"
+  },
+  "author": "Alejandro Tibaduiza Morales",
+  "license": "MIT"
+}

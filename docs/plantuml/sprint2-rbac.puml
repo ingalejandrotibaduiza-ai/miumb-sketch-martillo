@@ -1,0 +1,29 @@
+@startuml
+title Modelo RBAC Sprint 2 - ERP Joyería
+left to right direction
+actor Admin
+actor Vendedor
+actor Inventario
+actor Compras
+actor Consulta
+rectangle "ERP Joyería" {
+  usecase "Gestionar usuarios" as U1
+  usecase "Registrar joyas" as U2
+  usecase "Consultar inventario" as U3
+  usecase "Registrar venta" as U4
+  usecase "Gestionar proveedores" as U5
+  usecase "Ver reportes" as U6
+}
+Admin --> U1
+Admin --> U2
+Admin --> U3
+Admin --> U4
+Admin --> U5
+Admin --> U6
+Vendedor --> U3
+Vendedor --> U4
+Inventario --> U2
+Inventario --> U3
+Compras --> U5
+Consulta --> U3
+@enduml

@@ -1,0 +1,24 @@
+@startuml
+title Deployment View Sprint 2 - Terraform Académico
+node "GitHub Repository" {
+  artifact "infra/terraform/*.tf" as TF
+  artifact ".github/workflows/terraform-plan.yml" as WF
+}
+node "GitHub Actions" {
+  component "terraform fmt" as FMT
+  component "terraform init" as INIT
+  component "terraform validate" as VALIDATE
+  component "terraform plan" as PLAN
+}
+cloud "Proveedor cloud futuro" {
+  node "VPC futura" as VPC
+  database "Base de datos futura" as DB
+}
+TF --> WF
+WF --> FMT
+FMT --> INIT
+INIT --> VALIDATE
+VALIDATE --> PLAN
+PLAN ..> VPC : solo planificación
+PLAN ..> DB : no aplica recursos reales
+@enduml
